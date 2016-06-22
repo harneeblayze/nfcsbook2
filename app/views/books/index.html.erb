@@ -1,0 +1,50 @@
+<h1>NFCS STUDENT RECORD</h1>
+
+<table>
+  <tr>
+    <th>Fullname</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>Gender</th>
+    <!--<th>Address</th>
+    <th>Phone number</th>
+    <th>Dob</th>-->
+    <th></th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th>DEPARTMENT</th>
+  </tr>
+
+<% @books.each do |book| %>
+      <div class="book">
+
+      </div>
+  <tr>
+    <td><%= book.fullName %></td>
+    <td><marquee>|</marquee></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><%= book.gender %></td>
+    <td></td>
+    <td><marquee>|</marquee></td>
+    <td></td>
+    <td></td>
+    <td><%= book.department %></td>
+    <td></td>
+    <td><marquee>|</marquee></td>
+    <td><%= link_to 'more details', book %></td>
+    <td><%= link_to 'Edit', edit_book_path(book) %></td>
+
+
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Book', new_book_path %>
+
