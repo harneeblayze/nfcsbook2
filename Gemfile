@@ -29,6 +29,7 @@ end
 
 gem 'jquery-rails', '~> 2.2.1'
 gem 'social-share-button', '~> 0.1.6'
+gem 'kaminari'
 gem 'activeadmin'
 
 

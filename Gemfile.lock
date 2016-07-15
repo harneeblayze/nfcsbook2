@@ -164,6 +164,7 @@ DEPENDENCIES
   activeadmin
   coffee-rails (~> 3.2.1)
   jquery-rails (~> 2.2.1)
+  kaminari
   pg
   rails (= 3.2.13)
   rails_12factor
